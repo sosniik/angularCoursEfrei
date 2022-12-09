@@ -1,8 +1,11 @@
 <div class="nav">
-    Myshop
   <nav>
-    <ul>
-      <li><a routerLink="/cart" routerLinkActive="active" ariaCurrentWhenActive="page">cart</a></li>
+    <ul class="menuItems">
+      <li><a routerLink="/home" routerLinkActive="active" data-item='Home'>Home</a></li>
+      <li><a routerLink="/cart" routerLinkActive="active" data-item='Cart'>Cart</a></li>
+      <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li>
+ 
+      <li style="float:right"><a class="active">myShop</a></li>
     </ul>
   </nav>
   <router-outlet></router-outlet>

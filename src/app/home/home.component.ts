@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit{
           color: "black",
           weight: "250g",
           storage: "256GB",
-          price: "1000$",
+          price: 1000,
         },
         picture: "assets/img/iphone12.png"
       },
@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit{
           color: "white",
           weight: "50g",
           storage: "N/A",
-          price: "200$"
+          price: 200
         },
         picture: "assets/img/airpodsPro.png"
       },
@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit{
           color: "black",
           weight: "250g",
           storage: "512GB",
-          price: "900$"
+          price: 900
         },
         picture: "assets/img/samsungS22.png"
       },
@@ -56,7 +56,7 @@ export class HomeComponent implements OnInit{
           color: "black",
           weight: "250g",
           storage: "256GB",
-          price: "950$"
+          price: 950
         },
         picture: "assets/img/samsungNote10.png"
       },
@@ -68,7 +68,7 @@ export class HomeComponent implements OnInit{
           color: "white",
           weight: "250g",
           storage: "256GB",
-          price: "1300$"
+          price: 1300
         },
         picture: "assets/img/iphone14.png"
       }

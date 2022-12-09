@@ -11,6 +11,6 @@ export class Specification {
   color!: string;
   weight!: string;
   storage!: string;
-  price!: string;
+  price!: number;
 
 }

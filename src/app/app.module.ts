@@ -9,6 +9,7 @@ import { CartComponent } from './cart/cart.component';
 // import { AppRoutingModule } from './app-routing.module';
 import {RouterModule} from "@angular/router";
 import {ReactiveFormsModule} from "@angular/forms";
+import { ListCartComponent } from './list-cart/list-cart.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     HomeComponent,
     NavbarComponent,
     CardComponent,
-    CartComponent
+    CartComponent,
+    ListCartComponent
   ],
   imports: [
     BrowserModule,
