@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
+import {Product} from "../model/Product";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angularCoursEfrei';
+  @HostListener('document:keydown', ['$event'])
+  keydownHandler(event: KeyboardEvent): void {
+    if (event && event.ctrlKey && event.keyCode === 116) {
+      window.sessionStorage.clear();
+    }
+  }
 }
