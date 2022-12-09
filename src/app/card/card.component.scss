@@ -1,0 +1,46 @@
+.product-snap-card {
+  box-sizing: content-box;
+  width: 20%;
+  height: 20%;
+  margin: 10px;
+  padding: 5px 5px 5px 5px;
+  box-shadow: lightgray 4px 4px 20px;
+  display: inline-block;
+
+  img {
+    width: 20%;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+}
+
+.item {
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  border: none;
+  box-shadow: lightgray 3px 3px 7px;
+  margin-right: 20px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+
+  &:active {
+    transform: translate(1px, 1px);
+    box-shadow: lightgray 0 0 5px;
+  }
+
+}
