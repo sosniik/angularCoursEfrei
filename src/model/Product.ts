@@ -3,6 +3,7 @@ export class Product {
   name! : string;
   specifications! : Specification;
   picture!: string;
+  quantity!: number;
 
 }
 

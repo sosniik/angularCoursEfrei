@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit{
       {
         id: 1,
         name: "iPhone 12",
+        quantity: 0,
         specifications: {
           color: "black",
           weight: "250g",
@@ -26,6 +27,7 @@ export class HomeComponent implements OnInit{
       {
         id: 2,
         name: "Airpods",
+        quantity: 0,
         specifications: {
           color: "white",
           weight: "50g",
@@ -37,6 +39,7 @@ export class HomeComponent implements OnInit{
       {
         id: 3,
         name: "Samsung S22",
+        quantity: 0,
         specifications: {
           color: "black",
           weight: "250g",
@@ -48,6 +51,7 @@ export class HomeComponent implements OnInit{
       {
         id: 4,
         name: "Samsung Note10",
+        quantity: 0,
         specifications: {
           color: "black",
           weight: "250g",
@@ -59,6 +63,7 @@ export class HomeComponent implements OnInit{
       {
         id: 5,
         name: "Phone 14",
+        quantity: 0,
         specifications: {
           color: "white",
           weight: "250g",

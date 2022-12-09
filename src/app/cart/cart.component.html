@@ -1,7 +1,7 @@
 <div>
-  <p>Airpods : {{sessionStorage.getItem("Airpods")}}</p>
-  <p>iphone12 : {{sessionStorage.getItem("iPhone 12")}}</p>
-  <p>iphone14: {{sessionStorage.getItem("Phone 14")}}</p>
+  <p>Airpods : {{localStorage.getItem("Airpods")}}</p>
+  <p>iphone12 : {{localStorage.getItem("iPhone 12")}}</p>
+  <p>iphone14: {{localStorage.getItem("Phone 14")}}</p>
 
 <body>
   <table class="table">
@@ -13,15 +13,21 @@
       <th>Price</th>
       <th>Modify</th>
     </tr>
-    <tr>
-      <td>Airpods</td>
+
+    <tr *ngFor="let productT of allStorage()">
+      <td>{{productT}}</td>
     </tr>
     <tr>
-      <td>{{sessionStorage.getItem("Airpods")}}</td>
+      <td>{{localStorage.getItem("Airpods")}}</td>
     </tr>
     <tr>
       <td>{{subtotal()}}</td>
     </tr>
   </table>
 </body>
+  <div>
+    <h4>Your order</h4>
+<!--    <p *ngFor="let product of allStorage()">{{product}}</p>-->
+  </div>
+  <p></p>
 </div>

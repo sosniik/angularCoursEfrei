@@ -1,4 +1,4 @@
-import {Component, Injectable} from '@angular/core';
+import {Component, Injectable, Input} from '@angular/core';
 import {Product, Specification} from "../../model/Product";
 
 @Injectable({
@@ -10,17 +10,20 @@ import {Product, Specification} from "../../model/Product";
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent {
-  sessionStorage = localStorage
-  private product: any;
+  localStorage = localStorage
+  @Input() product!: Product;
 
 
   subtotal(){
     let subtotal = 0
     let nbItem = localStorage.getItem(Product.name)
-
-
     // let coucou = this.product.specifications.price
     // console.log("efehfef",coucou)
+
+    for (let i = 0; i < localStorage.length; i++) {
+      console.log(localStorage.key(i));
+
+    }
 
   }
   // let quantity = localStorage.getItem()
