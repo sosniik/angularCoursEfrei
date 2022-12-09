@@ -1,27 +1,26 @@
-<div>
-  <p>Airpods : {{sessionStorage.getItem("Airpods")}}</p>
-  <p>iphone12 : {{sessionStorage.getItem("iPhone 12")}}</p>
-  <p>iphone14: {{sessionStorage.getItem("Phone 14")}}</p>
 
-<body>
-  <table class="table">
-    <tr>
-      <th>Product</th>
-      <th>Picture</th>
-      <th>Specifications</th>
-      <th>Quantity</th>
-      <th>Price</th>
-      <th>Modify</th>
-    </tr>
-    <tr>
-      <td>Airpods</td>
-    </tr>
-    <tr>
-      <td>{{sessionStorage.getItem("Airpods")}}</td>
-    </tr>
-    <tr>
-      <td>{{subtotal()}}</td>
-    </tr>
-  </table>
-</body>
+<div class="container">
+
+  <section id="cart"> 
+<app-list-cart *ngFor="let product of products" [product]="product"></app-list-cart>
+  </section>
+
 </div>
+
+<footer id="site-footer">
+  <div class="container clearfix">
+
+    <div class="left">
+      <h2 class="subtotal">Subtotal: <span>163.96</span>€</h2>
+      <h3 class="tax">Taxes (5%): <span>8.2</span>€</h3>
+      <h3 class="shipping">Shipping: <span>5.00</span>€</h3>
+    </div>
+
+    <div class="right">
+      <h1 class="total">Total: <span>177.16</span>€</h1>
+      <a class="btn">Checkout</a>
+    </div>
+
+  </div>
+
+</footer>
