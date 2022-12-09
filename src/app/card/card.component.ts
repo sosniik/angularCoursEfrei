@@ -19,15 +19,15 @@ export class CardComponent {
 
     // Number(localStorage.getItem(product.name)) +=1
     this.quantity += 1
-    sessionStorage.setItem(product.name, String(this.quantity))
+    localStorage.setItem(product.name, String(this.quantity))
   }
 
   removeItem({$event, product}: { $event: MouseEvent, product: any }) {
     if(this.quantity <=0){
-      sessionStorage.setItem(product.name, String(0))
+      localStorage.setItem(product.name, String(0))
     }else {
       this.quantity -= 1
-      sessionStorage.setItem(product.name, String(this.quantity))
+      localStorage.setItem(product.name, String(this.quantity))
     }
   }
 }

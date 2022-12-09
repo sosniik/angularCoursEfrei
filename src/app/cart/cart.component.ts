@@ -10,13 +10,13 @@ import {Product, Specification} from "../../model/Product";
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent {
-  sessionStorage = sessionStorage
+  sessionStorage = localStorage
   private product: any;
 
 
   subtotal(){
     let subtotal = 0
-    let nbItem = sessionStorage.getItem(Product.name)
+    let nbItem = localStorage.getItem(Product.name)
 
 
     // let coucou = this.product.specifications.price
