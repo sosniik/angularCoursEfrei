@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Product} from "../../model/Product";
 
 @Component({
@@ -6,7 +6,7 @@ import {Product} from "../../model/Product";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent implements OnInit {
   title = 'angularCoursEfrei';
   products!: Product[];
 

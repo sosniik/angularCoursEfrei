@@ -39,12 +39,12 @@ export class CartComponent {
     return tab
   }
 
-  getLocalSto():any{
+  getLocalSto(): any {
     let tab = this.getKey()
     let productTab = []
-    for (let x in tab){
+    for (let x in tab) {
       const product = localStorage.getItem(tab[x])
-      if(product != null)
+      if (product != null)
         productTab.push(JSON.parse(product))
     }
     return productTab

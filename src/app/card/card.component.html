@@ -12,7 +12,4 @@
 
   <button class="button " (click)="addItem({$event : $event, product : product})">Add to Cart</button>
   <button class="button " (click)="removeItem({$event : $event, product : product})">Remove item</button>
-  <div *ngIf="localStorage.getItem(product.name)!">
-    <p>Quantity : {{localStorage.getItem(product.name)}}</p>
-  </div>
 </div>
